@@ -41,7 +41,7 @@
 
         .main-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 30px; /* Уменьшаем отступ, так как теперь есть два блока */
         }
 
         .main-header h1 {
@@ -60,7 +60,7 @@
             position: relative;
             width: 100%;
             padding: 20px 0;
-            margin-bottom: 80px;
+            margin-bottom: 60px; /* Слегка уменьшим отступ снизу для баланса */
         }
         
         .mini-timeline {
@@ -257,6 +257,16 @@
                 border-right-color: var(--card-bg-color);
                 border-left-color: transparent;
             }
+        }
+
+        /* --- Стили для выделения хедера и мини-шкалы --- */
+        .main-header,
+        .mini-timeline-container {
+            background-color: var(--card-bg-color);
+            border-radius: 8px; /* Скругляем углы как у карточек в основной шкале */
+            padding: 30px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Добавляем тень */
+            border: 1px solid var(--border-color);
         }
 
     </style>
